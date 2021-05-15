@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Simple form tests]">
+  <listeners>
+    <listener class-name="utility.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="demotest(failed)">
+    <classes>
+      <class name="tests.SimpleFormTests">
+        <methods>
+          <include name="afterMethod"/>
+          <include name="beforeSuite"/>
+          <include name="beforeClass"/>
+          <include name="sumOfTwoFields"/>
+          <include name="beforeMethod"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- tests.SimpleFormTests -->
+    </classes>
+  </test> <!-- demotest(failed) -->
+</suite> <!-- Failed suite [Simple form tests] -->
