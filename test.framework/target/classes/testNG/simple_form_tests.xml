@@ -1,16 +1,28 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-  
-<suite name="Simple form tests" verbose="1" >
-  <test name="demotest">
-	<classes>
-		<class name="tests.SimpleFormTests">
-			<methods>
-				<include name="sumOfTwoFields" />
-			</methods>
-		</class>
-    </classes>
-  </test>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Simple form tests" verbose="1">
+	<test name="demotest">
+		<parameter name="browser" value="Chrome" />
+		<classes>
+			<class name="tests.SimpleFormTests">
+				<methods>
+					<include name="sumOfTwoFields" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+	<test name="demotest1">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="tests.SimpleFormTests">
+				<methods>
+					<include name="sumOfTwoFields" />
+				</methods>
+			</class>
+		</classes>
+	</test>
 	<listeners>
-	<listener class-name="utility.TestListener"></listener>
+		<listener class-name="utility.TestListener"></listener>
 	</listeners>
 </suite>
