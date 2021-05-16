@@ -16,7 +16,7 @@ public class RunXml {
 		List<String> suitefiles=new ArrayList<String>();
 
 		// Add xml file which you have to execute
-		suitefiles.add("C:\\Users\\lenovo\\Desktop\\eclipse\\test.framework\\src\\main\\resources\\testNG\\simple_form_tests.xml");
+		suitefiles.add("C:\\Users\\lenovo\\Documents\\GitHub\\Selenium-Web-Automation\\test.framework\\src\\main\\resources\\testNG\\simple_form_tests.xml");
 
 		// now set xml file for execution
 		runner.setTestSuites(suitefiles);

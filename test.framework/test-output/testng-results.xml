@@ -1,150 +1,294 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="2" failed="0" ignored="0" total="2" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Simple form tests" duration-ms="7133" started-at="2021-04-30T09:34:35 IST" finished-at="2021-04-30T09:34:42 IST">
+  <suite name="Simple form tests" duration-ms="50715" started-at="2021-05-16T17:23:07 IST" finished-at="2021-05-16T17:23:57 IST">
     <groups>
     </groups>
-    <test name="demotest" duration-ms="7133" started-at="2021-04-30T09:34:35 IST" finished-at="2021-04-30T09:34:42 IST">
+    <test name="demotest" duration-ms="50715" started-at="2021-05-16T17:23:07 IST" finished-at="2021-05-16T17:23:57 IST">
       <class name="tests.SimpleFormTests">
-        <test-method status="FAIL" signature="beforeSuite()[pri:0, instance:tests.SimpleFormTests@402f32ff]" name="beforeSuite" is-config="true" duration-ms="222" started-at="2021-04-30T09:34:35 IST" finished-at="2021-04-30T09:34:35 IST">
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The driver executable does not exist: C:\Users\lenovo\Desktop\eclipse\test.framework\"C:\Users\lenovo\Documents\chromedriver.exe"]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\lenovo\Desktop\eclipse\test.framework\"C:\Users\lenovo\Documents\chromedriver.exe"
-at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-at base.BaseTest.beforeSuite(BaseTest.java:40)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at base.RunXml.main(RunXml.java:25)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+        <test-method status="PASS" signature="beforeTest(java.lang.String, java.lang.String)[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="beforeTest" is-config="true" duration-ms="15249" started-at="2021-05-16T17:23:07 IST" finished-at="2021-05-16T17:23:22 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[yes]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:tests.SimpleFormTests@402f32ff]" name="beforeClass" is-config="true" duration-ms="6980" started-at="2021-04-30T09:34:35 IST" finished-at="2021-04-30T09:34:42 IST">
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="beforeClass" is-config="true" duration-ms="6389" started-at="2021-05-16T17:23:22 IST" finished-at="2021-05-16T17:23:28 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:tests.SimpleFormTests@402f32ff]" name="beforeMethod" is-config="true" duration-ms="-1619755482642" started-at="2021-04-30T09:34:42 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="beforeMethod" is-config="true" duration-ms="3081" started-at="2021-05-16T17:23:28 IST" finished-at="2021-05-16T17:23:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="sumOfTwoFields(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.SimpleFormTests@402f32ff]" name="sumOfTwoFields" duration-ms="0" started-at="2021-04-30T09:34:42 IST" description="Test to validate 2 input fields moduels" data-provider="input data" finished-at="2021-04-30T09:34:42 IST">
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The driver executable does not exist: C:\Users\lenovo\Desktop\eclipse\test.framework\"C:\Users\lenovo\Documents\chromedriver.exe"]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\lenovo\Desktop\eclipse\test.framework\"C:\Users\lenovo\Documents\chromedriver.exe"
-at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-at base.BaseTest.beforeSuite(BaseTest.java:40)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at base.RunXml.main(RunXml.java:25)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
+        <test-method status="PASS" signature="sumOfTwoFields(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="sumOfTwoFields" duration-ms="379" started-at="2021-05-16T17:23:31 IST" description="Test to validate 2 input fields moduels" data-provider="input data" finished-at="2021-05-16T17:23:32 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sumOfTwoFields -->
-        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:tests.SimpleFormTests@402f32ff]" name="afterMethod" is-config="true" duration-ms="-1619755482651" started-at="2021-04-30T09:34:42 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="afterMethod" is-config="true" duration-ms="2" started-at="2021-05-16T17:23:32 IST" finished-at="2021-05-16T17:23:32 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="sumOfTwoFields(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.SimpleFormTests@402f32ff]" name="sumOfTwoFields" duration-ms="0" started-at="2021-04-30T09:34:42 IST" description="Test to validate 2 input fields moduels" data-provider="input data" finished-at="2021-04-30T09:34:42 IST">
-          <exception class="java.lang.IllegalStateException">
-            <message>
-              <![CDATA[The driver executable does not exist: C:\Users\lenovo\Desktop\eclipse\test.framework\"C:\Users\lenovo\Documents\chromedriver.exe"]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\lenovo\Desktop\eclipse\test.framework\"C:\Users\lenovo\Documents\chromedriver.exe"
-at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
-at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
-at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
-at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
-at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
-at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
-at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
-at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
-at base.BaseTest.beforeSuite(BaseTest.java:40)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.lang.reflect.Method.invoke(Method.java:498)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
-at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
-at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:327)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at base.RunXml.main(RunXml.java:25)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- sumOfTwoFields -->
-        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:tests.SimpleFormTests@402f32ff]" name="beforeMethod" is-config="true" duration-ms="-1619755482652" started-at="2021-04-30T09:34:42 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="beforeMethod" is-config="true" duration-ms="2897" started-at="2021-05-16T17:23:32 IST" finished-at="2021-05-16T17:23:35 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:tests.SimpleFormTests@402f32ff]" name="afterMethod" is-config="true" duration-ms="-1619755482653" started-at="2021-04-30T09:34:42 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="PASS" signature="sumOfTwoFields(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="sumOfTwoFields" duration-ms="306" started-at="2021-05-16T17:23:35 IST" description="Test to validate 2 input fields moduels" data-provider="input data" finished-at="2021-05-16T17:23:35 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[-5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sumOfTwoFields -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-05-16T17:23:35 IST" finished-at="2021-05-16T17:23:35 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method status="SKIP" signature="afterClass()[pri:0, instance:tests.SimpleFormTests@402f32ff]" name="afterClass" is-config="true" duration-ms="-1619755482655" started-at="2021-04-30T09:34:42 IST" finished-at="1970-01-01T05:30:00 IST">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="beforeMethod" is-config="true" duration-ms="2725" started-at="2021-05-16T17:23:35 IST" finished-at="2021-05-16T17:23:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="sumOfTwoFields(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="sumOfTwoFields" duration-ms="377" started-at="2021-05-16T17:23:38 IST" description="Test to validate 2 input fields moduels" data-provider="input data" finished-at="2021-05-16T17:23:38 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3.5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1.5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sumOfTwoFields -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-05-16T17:23:38 IST" finished-at="2021-05-16T17:23:38 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="beforeMethod" is-config="true" duration-ms="2651" started-at="2021-05-16T17:23:38 IST" finished-at="2021-05-16T17:23:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="sumOfTwoFields(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="sumOfTwoFields" duration-ms="300" started-at="2021-05-16T17:23:41 IST" description="Test to validate 2 input fields moduels" data-provider="input data" finished-at="2021-05-16T17:23:41 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10000]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[40000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[50000]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sumOfTwoFields -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-05-16T17:23:41 IST" finished-at="2021-05-16T17:23:41 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="beforeMethod" is-config="true" duration-ms="2602" started-at="2021-05-16T17:23:41 IST" finished-at="2021-05-16T17:23:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="sumOfTwoFields(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="sumOfTwoFields" duration-ms="336" started-at="2021-05-16T17:23:44 IST" description="Test to validate 2 input fields moduels" data-provider="input data" finished-at="2021-05-16T17:23:44 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[25.2695]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[20.3649]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[45]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sumOfTwoFields -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-05-16T17:23:44 IST" finished-at="2021-05-16T17:23:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="beforeMethod" is-config="true" duration-ms="2716" started-at="2021-05-16T17:23:44 IST" finished-at="2021-05-16T17:23:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="sumOfTwoFields(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="sumOfTwoFields" duration-ms="349" started-at="2021-05-16T17:23:47 IST" description="Test to validate 2 input fields moduels" data-provider="input data" finished-at="2021-05-16T17:23:47 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ ]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NaN]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sumOfTwoFields -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-05-16T17:23:47 IST" finished-at="2021-05-16T17:23:47 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="beforeMethod" is-config="true" duration-ms="2642" started-at="2021-05-16T17:23:47 IST" finished-at="2021-05-16T17:23:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="sumOfTwoFields(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="sumOfTwoFields" duration-ms="295" started-at="2021-05-16T17:23:50 IST" description="Test to validate 2 input fields moduels" data-provider="input data" finished-at="2021-05-16T17:23:50 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[a]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[b]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NaN]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sumOfTwoFields -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-05-16T17:23:50 IST" finished-at="2021-05-16T17:23:50 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="beforeMethod" is-config="true" duration-ms="3177" started-at="2021-05-16T17:23:50 IST" finished-at="2021-05-16T17:23:53 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="sumOfTwoFields(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="sumOfTwoFields" duration-ms="309" started-at="2021-05-16T17:23:53 IST" description="Test to validate 2 input fields moduels" data-provider="input data" finished-at="2021-05-16T17:23:54 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sun]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[rise]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NaN]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sumOfTwoFields -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="afterMethod" is-config="true" duration-ms="1" started-at="2021-05-16T17:23:54 IST" finished-at="2021-05-16T17:23:54 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="beforeMethod" is-config="true" duration-ms="2874" started-at="2021-05-16T17:23:54 IST" finished-at="2021-05-16T17:23:56 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="sumOfTwoFields(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="sumOfTwoFields" duration-ms="345" started-at="2021-05-16T17:23:56 IST" description="Test to validate 2 input fields moduels" data-provider="input data" finished-at="2021-05-16T17:23:57 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[@]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[&]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NaN]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sumOfTwoFields -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="afterMethod" is-config="true" duration-ms="0" started-at="2021-05-16T17:23:57 IST" finished-at="2021-05-16T17:23:57 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:tests.SimpleFormTests@7ac7a4e4]" name="afterClass" is-config="true" duration-ms="653" started-at="2021-05-16T17:23:57 IST" finished-at="2021-05-16T17:23:57 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

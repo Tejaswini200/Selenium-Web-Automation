@@ -10,6 +10,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
 import org.testng.Assert;
@@ -23,8 +24,8 @@ public class BaseTest {
 	
 	
 	@BeforeTest
-	@Parameters("browser")
-	public void beforeSuite(String browser) {
+	@Parameters({"browser","headless"})
+	public void beforeTest(String browser, String headless ) {
 	    FileReader reader = null;
 		try {
 			reader = new FileReader("src\\main\\resources\\configuration\\framework.properties");
@@ -40,7 +41,7 @@ public class BaseTest {
 			e.printStackTrace();
 		} 
 	    try {
-			driver = setupBrowserDriver(browser, p, driver);
+			driver = setupBrowserDriver(browser, p, driver,headless);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -84,7 +85,7 @@ public class BaseTest {
 	 * @param browser
 	 * @throws Exception
 	 */
-	public WebDriver setupBrowserDriver(String browser, Properties p, WebDriver driver) throws Exception{
+	public WebDriver setupBrowserDriver(String browser, Properties p, WebDriver driver, String headless) throws Exception{
 		if(browser.equalsIgnoreCase("firefox")){
 			System.setProperty("webdriver.gecko.driver",p.getProperty("firefoxdriver_path"));
 			driver = new FirefoxDriver();
@@ -92,7 +93,16 @@ public class BaseTest {
 		}
 		else if(browser.equalsIgnoreCase("chrome")){
 			System.setProperty("webdriver.chrome.driver",p.getProperty("chromedriver_path"));
-			driver = new ChromeDriver();
+			if(headless.equalsIgnoreCase("yes")){
+				ChromeOptions options = new ChromeOptions();
+				options.addArguments("--headless", "--disable-gpu", "--window-size=1920,1200",
+						"--ignore-certificate-errors","--disable-extensions","--no-sandbox",
+						"--disable-dev-shm-usage");
+
+				driver = new ChromeDriver(options);
+			}
+			else
+				driver=new ChromeDriver();
 			return driver;
 		}
 		else{
