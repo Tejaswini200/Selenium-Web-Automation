@@ -10,6 +10,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.*;
 import org.testng.Assert;
 import org.testng.ITestNGMethod;
@@ -17,10 +18,13 @@ import org.testng.ITestNGMethod;
 public class BaseTest {
 
 	public static WebDriver driver;
-	protected Properties p;
+	public static Properties p;
 
-	@BeforeSuite
-	public void beforeSuite() {
+	
+	
+	@BeforeTest
+	@Parameters("browser")
+	public void beforeSuite(String browser) {
 	    FileReader reader = null;
 		try {
 			reader = new FileReader("src\\main\\resources\\configuration\\framework.properties");
@@ -35,9 +39,14 @@ public class BaseTest {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} 
+	    try {
+			driver = setupBrowserDriver(browser, p, driver);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
  
-		System.setProperty("webdriver.chrome.driver", p.getProperty("chromedriver_path"));  
-		driver= new ChromeDriver(); 
+ 
 		driver.manage().window().maximize();
 		driver.get(p.getProperty("testing_url"));
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -70,6 +79,26 @@ public class BaseTest {
 		js.executeScript("arguments[0].scrollIntoView(true);", element);
 	}
 	
+	/**
+	 * This function will execute before each Test tag in testng.xml
+	 * @param browser
+	 * @throws Exception
+	 */
+	public WebDriver setupBrowserDriver(String browser, Properties p, WebDriver driver) throws Exception{
+		if(browser.equalsIgnoreCase("firefox")){
+			System.setProperty("webdriver.gecko.driver",p.getProperty("firefoxdriver_path"));
+			driver = new FirefoxDriver();
+			return driver;
+		}
+		else if(browser.equalsIgnoreCase("chrome")){
+			System.setProperty("webdriver.chrome.driver",p.getProperty("chromedriver_path"));
+			driver = new ChromeDriver();
+			return driver;
+		}
+		else{
+			throw new Exception("Browser is not correct");
+		}
+	}
 
 	
 }	

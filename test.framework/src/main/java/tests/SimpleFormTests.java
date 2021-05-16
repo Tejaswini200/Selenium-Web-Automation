@@ -33,12 +33,12 @@ public class SimpleFormTests extends WebFormBase {
 
 	@DataProvider (name = "input data")
 	public Object[][] dpMethod(){
-		return new Object[][] {{"2", "3", "5"}, {"-2", "-3", "-5"}};
+		return new Object[][] {{"2", "3", "5"}, {"-2", "-3", "-5"}	, {"3.5", "1.5", "4" },
+			{"10000","40000","50000"},{ "25.2695", "20.3649","45"},{"5"," ","NaN"},{"a","b","NaN"},
+			{"Sun","rise","NaN"},{"@","&","NaN"}};
 	}
 	
-	//, {"3.5", "1.5", "4" },
-	//{"10000","40000","50000"},{ "25.2695", "20.3649","45"},{"5"," ","NaN"},{"a","b","NaN"},
-	//{"Sun","rise","NaN"},{"@","&","NaN"}
+
 
 	@Test(description = "Test to validate 2 input fields moduels", dataProvider = "input data")
 	public void sumOfTwoFields(String inputFieldOne, String inputFieldTwo, String output) {
