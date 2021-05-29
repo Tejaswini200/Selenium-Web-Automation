@@ -1,9 +1,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="Simple form tests" verbose="1">
-	 <test name="demotest">
+	<test name="demotest">
 		<parameter name="browser" value="Chrome" />
-		<parameter name="headless" value="no" />
+		<parameter name="headless" value="yes" />
 		<classes>
 			<class name="tests.SimpleFormTests">
 				<methods>
@@ -13,6 +13,17 @@
 		</classes>
 	</test>
 
+    
+	  <test name="demotest1">
+		<parameter name="browser" value="firefox" />
+		<classes>
+			<class name="tests.SimpleFormTests">
+				<methods>
+					<include name="sumOfTwoFields" />
+				</methods>
+			</class>
+		</classes>
+	</test>
 	<listeners>
 		<listener class-name="utility.TestListener"></listener>
 	</listeners>
