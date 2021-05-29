@@ -5,13 +5,16 @@
     <listener class-name="utility.TestListener"/>
   </listeners>
   <test thread-count="5" name="demotest(failed)">
+    <parameter name="headless" value="no"/>
+    <parameter name="browser" value="Chrome"/>
     <classes>
       <class name="tests.SimpleFormTests">
         <methods>
+          <include name="beforeTest"/>
           <include name="afterMethod"/>
-          <include name="beforeSuite"/>
           <include name="beforeClass"/>
-          <include name="sumOfTwoFields"/>
+          <include name="sumOfTwoFields" invocation-numbers="0"/>
+          <include name="afterMethod"/>
           <include name="beforeMethod"/>
           <include name="afterClass"/>
         </methods>

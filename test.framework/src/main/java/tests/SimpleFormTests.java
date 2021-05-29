@@ -5,6 +5,7 @@ import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.ITestContext;
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
@@ -27,17 +28,17 @@ public class SimpleFormTests extends WebFormBase {
 	}
 	
 	@AfterMethod
-	public void afterMethod() {
+	public void afterMethod()  {
 		report.endTest(test);
 	}
 
 	@DataProvider (name = "input data")
 	public Object[][] dpMethod(){
-		return new Object[][] {{"2", "3", "5"}, {"-2", "-3", "-5"}	, {"3.5", "1.5", "4" },
-			{"10000","40000","50000"},{ "25.2695", "20.3649","45"},{"5"," ","NaN"},{"a","b","NaN"},
-			{"Sun","rise","NaN"},{"@","&","NaN"}};
+		return new Object[][] {{"2", "3", "6"}};
 	}
-	
+//	, {"-2", "-3", "-5"}	, {"3.5", "1.5", "4" },
+//		{"10000","40000","50000"},{ "25.2695", "20.3649","45"},{"5"," ","NaN"},{"a","b","NaN"},
+//		{"Sun","rise","NaN"},{"@","&","NaN"}}
 
 
 	@Test(description = "Test to validate 2 input fields moduels", dataProvider = "input data")
@@ -54,7 +55,7 @@ public class SimpleFormTests extends WebFormBase {
 		simpleForm.enterSecondField(inputFieldTwo);
 		test.log(LogStatus.PASS, inputFieldTwo+ " is entered in Input field two");
 		simpleForm.clickTotalButton();
-		test.log(LogStatus.FAIL, "Total button is clicked");
+		test.log(LogStatus.PASS, "Total button is clicked");
 		Assert.assertEquals(output, simpleForm.getDisplayedValue());
 		test.log(LogStatus.PASS, "Test case passed successfully!");
 		LOGGER.info("Test case completed");

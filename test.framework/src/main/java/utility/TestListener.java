@@ -1,7 +1,15 @@
 package utility;
 
+import java.io.File;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.apache.commons.io.FileUtils;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -31,6 +39,7 @@ public class TestListener implements ITestListener {
 		// TODO Auto-generated method stub
 		LOGGER.info("Test case failed: " + getTestMethodName(result));
 		System.out.println("Test case failed: " + getTestMethodName(result));
+		
 	}
 
 	@Override
@@ -71,5 +80,6 @@ public class TestListener implements ITestListener {
 		className = className.substring(className.lastIndexOf('.') + 1);
 		return className + " - " + iTestResult.getMethod().getConstructorOrMethod().getName();
 	}
+
 
 }
